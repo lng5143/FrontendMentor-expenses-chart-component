@@ -9,14 +9,21 @@ body {
     padding: 50px 15px;
 }
 
+#container {
+
+}
+
 #summary-section {
     background-color: #ec775f;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 7px;
     color: white;
-    /* background: url(images/logo.svg) no-repeat;
-    background-position: right 20px center; */
+    display: flex;
+}
+
+#summary-section #text {
+    flex-basis: 100%;
 }
 
 #balance {
@@ -34,6 +41,7 @@ body {
     font-weight: 700;
     font-size: 1.5rem;
     margin-bottom: 40px;
+    color: #382314;
 }
 
 #chart-section {
@@ -42,34 +50,43 @@ body {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-gap: 10px;
-    text-align: center;
+    align-items: end;
+    justify-content: center;
 }
 
 .bar {
     border-radius: 3px;
 }
 
-hr {
-    
-}
-
 #month-summary {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+
+#month-summary .number {
+    color: #382314;
 }
 
 #month-total .number {
     font-weight: 700;
     font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #month-change {
     text-align: right;
-    
+    align-self: flex-end;
 }
 
 #month-change .number {
     font-weight: 700;
+    margin-bottom: 3px;
+}
+
+#month-change .text {
+    margin: 0px;
 }
 
 #wed-bar {
@@ -84,4 +101,15 @@ hr {
 
 .bold {
     font-weight: 700;
+}
+
+.text {
+    color: #93867b;
+}
+
+@media all and (min-width: 450px) {
+    #container {
+        width: 420px;
+        margin: 0 auto;
+    }
 }
