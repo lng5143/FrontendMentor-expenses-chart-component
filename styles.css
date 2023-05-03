@@ -1,0 +1,87 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans';
+}
+
+body {
+    background-color: #f8e9dd;
+    padding: 50px 15px;
+}
+
+#summary-section {
+    background-color: #ec775f;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    color: white;
+    /* background: url(images/logo.svg) no-repeat;
+    background-position: right 20px center; */
+}
+
+#balance {
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+
+#details-section { 
+    background-color: #fffaf5;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+#title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+#chart-section {
+    font-size: 0.8rem;
+    margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+    text-align: center;
+}
+
+.bar {
+    border-radius: 3px;
+}
+
+hr {
+    
+}
+
+#month-summary {
+    display: flex;
+    flex-direction: row;
+}
+
+#month-total .number {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+#month-change {
+    text-align: right;
+    
+}
+
+#month-change .number {
+    font-weight: 700;
+}
+
+#wed-bar {
+    background-color: #76b5bc;
+    height: 150px;
+}
+
+#thu-bar {
+    background-color: #ec775f;
+    height: 100px;
+}
+
+.bold {
+    font-weight: 700;
+}

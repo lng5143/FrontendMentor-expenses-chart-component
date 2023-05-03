@@ -5,39 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Expenses chart component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <div id="summary-section">
+    <div id="my-balance">My balance</div>
+    <div id="balance" class="bold">$921.48</div>
+  </div>
 
-  My balance
-  $921.48
+  <div id="details-section">
+    <div id="title">
+    Spending - Last 7 days
+    </div>
 
-  Spending - Last 7 days
+    <div id="chart-section">
+    <div id="mon-bar" class="bar"></div>
+    <div id="tue-bar" class="bar"></div>
+    <div id="wed-bar" class="bar"></div>
+    <div id="thu-bar" class="bar"></div>
+    <div id="fri-bar" class="bar"></div>
+    <div id="sat-bar" class="bar"></div>
+    <div id="sun-bar" class="bar"></div>
+    <div>mon</div>
+    <div>tue</div>
+    <div>wed</div>
+    <div>thu</div>
+    <div>fri</div>
+    <div>sat</div>
+    <div>sun</div>
+    </div>
 
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
+    <hr>
+    <div id="month-summary">
+      <div id="month-total">
+    <p class="text">Total this month</p>
+    <p class="bold">$478.33</p>
+    </div>
 
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <div id="month-change">
+      <p class="bold">+2.4%</p>
+    <p class="text">from last month</p>
+    
+    </div>
+    </div>
   </div>
 </body>
+<script src="script.js"></script>
 </html>
