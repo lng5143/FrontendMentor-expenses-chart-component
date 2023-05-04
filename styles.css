@@ -40,7 +40,7 @@ body {
 #title {
     font-weight: 700;
     font-size: 1.5rem;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     color: #382314;
 }
 
@@ -49,7 +49,7 @@ body {
     margin-bottom: 25px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-gap: 10px;
+    grid-gap: 12px;
     align-items: end;
     justify-content: center;
 }
@@ -89,14 +89,25 @@ body {
     margin: 0px;
 }
 
-#wed-bar {
+.bar {
+    background-color: #ec775f;
+    height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.current-bar {
     background-color: #76b5bc;
     height: 150px;
 }
 
-#thu-bar {
-    background-color: #ec775f;
-    height: 100px;
+.bar:hover {
+    background-color: #f2a99b;
+}
+
+.current-bar:hover {
+    background-color: #99dee6;
 }
 
 .bold {
@@ -105,6 +116,23 @@ body {
 
 .text {
     color: #93867b;
+}
+
+hr {
+    background-color: #f8e9dd;
+    height: 2px;
+    border: none;
+}
+
+.bar-number {
+    background-color: #382314;
+    height: 30px;
+    width: 120%;
+    position: absolute;
+    top: -35px;
+    text-align: center;
+    border-radius: 3px;
+    display: none;
 }
 
 @media all and (min-width: 450px) {
