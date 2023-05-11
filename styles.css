@@ -102,9 +102,9 @@ body {
     height: 150px;
 }
 
-.bar:hover {
+/* .bar:hover {
     background-color: #f2a99b;
-}
+} */
 
 .current-bar:hover {
     background-color: #99dee6;
@@ -134,17 +134,38 @@ hr {
     border-radius: 3px;
     color: #fffaf5;
     font-weight: 700;
-    /* display: none; */
+    display: none;
     justify-content: center;
     align-items: center;
 }
 
-#bar-number-mon {
-    display: none;
+
+#bar-mon:hover > #bar-number-mon {
+    display: flex;
 }
 
-#bar-mon:hover + #bar-number-mon {
-    display: block;
+#bar-tue:hover > #bar-number-tue {
+    display: flex;
+}
+
+#bar-wed:hover > #bar-number-wed {
+    display: flex;
+}
+
+#bar-thu:hover > #bar-number-thu {
+    display: flex;
+}
+
+#bar-fri:hover > #bar-number-fri {
+    display: flex;
+}
+
+#bar-sat:hover > #bar-number-sat {
+    display: flex;
+}
+
+#bar-sun:hover > #bar-number-sun {
+    display: flex;
 }
 
 @media all and (min-width: 450px) {
